@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Görüntüleme ve rapor; görseller temsilîdir.",
+    "en": "Imaging and reports; images are representative.",
+    "ar": "تصوير وتقرير؛ الصور تمثيلية."
+  },
+  "keyword": {
+    "tr": "radyoloji, görüntüleme, cihaz",
+    "en": "radiology, imaging, device",
+    "ar": "رنين، تصوير، جهاز"
+  },
+  "category": "Kurumsal",
+  "name": "Net Görüntü",
+  "domain": "radyoloji.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "publishMode": "static",
+  "font": {
+    "body": "inter",
+    "heading": "poppins",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "theme_color": "#017E9A",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "1px",
+    "--mx-radius-md": "2px",
+    "--mx-radius-lg": "3px",
+    "--mx-radius-xl": "4px"
+  },
+  "icon": "icon.png"
+}
