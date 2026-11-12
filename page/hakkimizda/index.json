@@ -21,9 +21,9 @@
   },
   "pathnext": "",
   "description": {
-    "tr": "Görüntüleme ve rapor; görseller temsilîdir.",
-    "en": "Imaging and reports; images are representative.",
-    "ar": "تصوير وتقرير؛ الصور تمثيلية."
+    "tr": "Görüntüleme merkezi; görseller temsilîdir.",
+    "en": "Imaging centre; images are representative.",
+    "ar": "مركز تصوير؛ الصور تمثيلية."
   },
   "spot": {
     "tr": "",
@@ -42,6 +42,6 @@
     "ar": "من نحن"
   },
   "text": {},
-  "update": "2026-11-05T23:44:47.343Z",
+  "update": "2026-11-12T07:36:45.267Z",
   "date": "2026-10-30"
 }

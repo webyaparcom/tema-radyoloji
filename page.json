@@ -8,9 +8,9 @@
         "ar": "خدماتنا"
       },
       "description": {
-        "tr": "Randevudan sonuç takibine.",
-        "en": "From appointment to result tracking.",
-        "ar": "من الموعد إلى تتبع النتيجة."
+        "tr": "Hekim isteminize göre randevu, çekim ve rapor.",
+        "en": "Appointment, scan and report based on your doctor's referral.",
+        "ar": "موعد وتصوير وتقرير بحسب إحالة طبيبك."
       },
       "path": "hizmetler",
       "icon": "work",
@@ -49,9 +49,9 @@
       },
       "pathnext": "",
       "description": {
-        "tr": "Görüntüleme ve rapor; görseller temsilîdir.",
-        "en": "Imaging and reports; images are representative.",
-        "ar": "تصوير وتقرير؛ الصور تمثيلية."
+        "tr": "Görüntüleme merkezi; görseller temsilîdir.",
+        "en": "Imaging centre; images are representative.",
+        "ar": "مركز تصوير؛ الصور تمثيلية."
       }
     },
     {

@@ -6,14 +6,14 @@
     "ar": "خدماتنا"
   },
   "description": {
-    "tr": "Randevudan sonuç takibine.",
-    "en": "From appointment to result tracking.",
-    "ar": "من الموعد إلى تتبع النتيجة."
+    "tr": "Hekim isteminize göre randevu, çekim ve rapor.",
+    "en": "Appointment, scan and report based on your doctor's referral.",
+    "ar": "موعد وتصوير وتقرير بحسب إحالة طبيبك."
   },
   "keyword": {
-    "tr": "Sağlık",
-    "en": "The health",
-    "ar": "الصحة"
+    "tr": "Görüntüleme",
+    "en": "Imaging",
+    "ar": "التصوير"
   },
   "path": "hizmetler",
   "icon": "work",
@@ -36,5 +36,5 @@
     "ar": "خدماتنا"
   },
   "date": "2026-11-05T18:57:28.865Z",
-  "update": "2026-11-05T23:44:47.340Z"
+  "update": "2026-11-12T07:36:45.263Z"
 }

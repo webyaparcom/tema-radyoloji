@@ -30,6 +30,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "version": "1.0.0",
@@ -766,7 +772,12 @@
         "social_media": false,
         "logo_maxh": "60px",
         "logo_plate": false,
-        "contact_line": "auto"
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
       },
       "version": "1.0.0",
       "icon": "widgets",
@@ -1478,9 +1489,9 @@
         "accentText": "var(--mx-site-primary-contrast, #ffffff)",
         "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "cta": {
-          "tr": "Teklif al",
-          "en": "Get a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Randevu al",
+          "en": "Book now",
+          "ar": "احجز موعدًا"
         },
         "cta_url": "teklif-al"
       },
@@ -1522,7 +1533,7 @@
         "hiza": "orta",
         "yukseklik": 82,
         "max": "1200px",
-        "img": "klinik-muayene-koltugu.webp",
+        "img": "klinik-klinik-oda.webp",
         "video": "",
         "poster": "",
         "alt": "Net Görüntü",
@@ -1533,30 +1544,30 @@
         "bg": "var(--mx-site-bg, #ffffff)",
         "radius": "16px",
         "eyebrow": {
-          "tr": "Diagnostik görüntüleme",
-          "en": "Diagnostic imaging",
-          "ar": "تصوير تشخيصي"
+          "tr": "Tanısal görüntüleme merkezi",
+          "en": "Diagnostic imaging centre",
+          "ar": "مركز التصوير التشخيصي"
         },
         "title": {
-          "tr": "Görünüm, net ve hızlı",
-          "en": "Image, clear and fast",
-          "ar": "صورة واضحة وسريعة"
+          "tr": "Net görüntü, açık rapor",
+          "en": "Clear images, clear reports",
+          "ar": "صور واضحة وتقارير مفهومة"
         },
         "metin": {
-          "tr": "Net Görüntü, görüntüleme ve rapor sunar. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Net imaj offers imaging and reports. Images are representative and text is fictional.",
-          "ar": "يقدم نتي مياج تصوير وتقرير. الصور تمثيلية والنصوص افتراضية."
+          "tr": "MR, tomografi, röntgen, ultrason ve mamografi için randevulu görüntüleme; raporlar radyoloji uzmanı tarafından hazırlanır. Kurgusal demo merkezidir; görseller temsilîdir.",
+          "en": "Appointment-based MRI, CT, X-ray, ultrasound and mammography; reports are prepared by a radiology specialist. This is a fictional demo centre; images are representative.",
+          "ar": "تصوير بالموعد للرنين المغناطيسي والأشعة المقطعية والسينية والموجات فوق الصوتية والماموغرام؛ يعدّ التقارير أخصائي أشعة. هذا مركز تجريبي افتراضي والصور تمثيلية."
         },
         "cta1": {
-          "tr": "Birimler",
-          "en": "Units",
-          "ar": "وحدات"
+          "tr": "Tetkikler",
+          "en": "Examinations",
+          "ar": "الفحوصات"
         },
         "cta1_url": "hizmetler",
         "cta2": {
           "tr": "Randevu iste",
-          "en": "Book",
-          "ar": "احجز"
+          "en": "Request an appointment",
+          "ar": "اطلب موعدًا"
         },
         "cta2_url": "teklif-al",
         "scroll_label": {
@@ -1601,9 +1612,9 @@
         "radius": "16px",
         "sure": 1000,
         "title": {
-          "tr": "Nasıl yardımcı olabiliriz?",
-          "en": "How can we help?",
-          "ar": "كيف يمكننا المساعدة؟"
+          "tr": "Rakamlarla merkez",
+          "en": "The centre in numbers",
+          "ar": "المركز بالأرقام"
         },
         "description": {
           "tr": "Kurgusal demo verileri.",
@@ -1613,13 +1624,13 @@
       },
       "data": [
         {
-          "deger": 10,
+          "deger": 6,
           "sonek": "",
-          "ikon": "monitoring",
+          "ikon": "radiology",
           "etiket": {
-            "tr": "Uzman branşı",
-            "en": "Specialist branch",
-            "ar": "فرع متخصص"
+            "tr": "Görüntüleme cihazı",
+            "en": "Imaging devices",
+            "ar": "جهاز تصوير"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1628,13 +1639,28 @@
           }
         },
         {
-          "deger": 40,
-          "sonek": " dk",
+          "deger": 3,
+          "sonek": "",
+          "ikon": "stethoscope",
+          "etiket": {
+            "tr": "Radyoloji uzmanı",
+            "en": "Radiology specialists",
+            "ar": "أخصائي أشعة"
+          },
+          "aciklama": {
+            "tr": "Kurgusal demo değeri",
+            "en": "Fictional demo figure",
+            "ar": "قيمة تجريبية"
+          }
+        },
+        {
+          "deger": 48,
+          "sonek": " saat",
           "ikon": "schedule",
           "etiket": {
-            "tr": "Tanı süresi",
-            "en": "Diagnosis time",
-            "ar": "زمن التشخيص"
+            "tr": "Standart rapor süresi",
+            "en": "Standard report time",
+            "ar": "مدة التقرير المعتادة"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1643,28 +1669,13 @@
           }
         },
         {
-          "deger": 96,
-          "sonek": "%",
-          "ikon": "verified",
-          "etiket": {
-            "tr": "Numune doğruluğu",
-            "en": "Sample accuracy",
-            "ar": "دقة العينة"
-          },
-          "aciklama": {
-            "tr": "Kurgusal demo değeri",
-            "en": "Fictional demo figure",
-            "ar": "قيمة تجريبية"
-          }
-        },
-        {
-          "deger": 7,
+          "deger": 5,
           "sonek": "",
-          "ikon": "groups",
+          "ikon": "category",
           "etiket": {
-            "tr": "Saha personeli",
-            "en": "Field staff",
-            "ar": "طاقم الميدان"
+            "tr": "Tetkik türü",
+            "en": "Examination types",
+            "ar": "نوع فحص"
           },
           "aciklama": {
             "tr": "Kurgusal demo değeri",
@@ -1695,98 +1706,98 @@
         "badgebg": "#2E6BFF",
         "badgecolor": "#ffffff",
         "badge": {
-          "tr": "Sağlık",
-          "en": "The health",
-          "ar": "الصحة"
+          "tr": "Görüntüleme",
+          "en": "Imaging",
+          "ar": "التصوير"
         },
         "title": {
-          "tr": "Nasıl yardımcı olabiliriz?",
-          "en": "How can we help?",
-          "ar": "كيف يمكننا المساعدة؟"
+          "tr": "Hangi tetkike ihtiyacınız var?",
+          "en": "Which examination do you need?",
+          "ar": "أي فحص تحتاج؟"
         },
         "description": {
-          "tr": "Randevudan sonuç takibine.",
-          "en": "From appointment to result tracking.",
-          "ar": "من الموعد إلى تتبع النتيجة."
+          "tr": "Hekim isteminize göre randevu, çekim ve rapor.",
+          "en": "Appointment, scan and report based on your doctor's referral.",
+          "ar": "موعد وتصوير وتقرير بحسب إحالة طبيبك."
         }
       },
       "data": [
         {
-          "icon": "monitoring",
+          "icon": "radiology",
           "name": {
-            "tr": "Poliklinik",
-            "en": "Polyclinic",
-            "ar": "العيادات"
+            "tr": "MR (manyetik rezonans)",
+            "en": "MRI (magnetic resonance)",
+            "ar": "الرنين المغناطيسي"
           },
           "description": {
-            "tr": "Randevu ve triyaj akışı.",
-            "en": "Appointment and triage flow.",
-            "ar": "مسار المواعيد والتوجيه."
+            "tr": "Beyin, omurga ve eklem görüntüleme; çekim öncesi kısa bir form doldurulur.",
+            "en": "Brain, spine and joint imaging; a short form is filled in before the scan.",
+            "ar": "تصوير الدماغ والعمود الفقري والمفاصل؛ تُعبّأ استمارة قصيرة قبل التصوير."
           }
         },
         {
-          "icon": "biotech",
+          "icon": "scanner",
           "name": {
-            "tr": "Laboratuvar",
-            "en": "Laboratory",
-            "ar": "المختبر"
+            "tr": "Bilgisayarlı tomografi",
+            "en": "Computed tomography (CT)",
+            "ar": "الأشعة المقطعية"
           },
           "description": {
-            "tr": "Numune ve sonuç takibi.",
-            "en": "Sample and result tracking.",
-            "ar": "تتبع العينة والنتيجة."
+            "tr": "Kesitsel görüntüleme; gerekirse kontrastlı çekim.",
+            "en": "Cross-sectional imaging; contrast scans when needed.",
+            "ar": "تصوير مقطعي؛ مع مادة تباين عند الحاجة."
           }
         },
         {
-          "icon": "local_hospital",
+          "icon": "skeleton",
           "name": {
-            "tr": "Radyoloji",
-            "en": "Radiology",
-            "ar": "الأشعة"
+            "tr": "Röntgen",
+            "en": "X-ray",
+            "ar": "الأشعة السينية"
           },
           "description": {
-            "tr": "Görüntüleme randevusu.",
-            "en": "Imaging appointment.",
-            "ar": "موعد تصوير."
+            "tr": "Akciğer ve kemik filmi çekimleri.",
+            "en": "Chest and bone X-ray films.",
+            "ar": "صور الصدر والعظام بالأشعة السينية."
           }
         },
         {
-          "icon": "medical_information",
+          "icon": "ecg_heart",
           "name": {
-            "tr": "Uzaktan takip",
-            "en": "Remote follow-up",
-            "ar": "متابعة عن بُعد"
+            "tr": "Ultrasonografi",
+            "en": "Ultrasound",
+            "ar": "الموجات فوق الصوتية"
           },
           "description": {
-            "tr": "Yeni randevu ve yönlendirme.",
-            "en": "New appointment and referral.",
-            "ar": "موعد جديد وإحالة."
+            "tr": "Karın, tiroid ve yumuşak doku ultrasonu.",
+            "en": "Abdominal, thyroid and soft-tissue ultrasound.",
+            "ar": "سونار البطن والغدة الدرقية والأنسجة الرخوة."
           }
         },
         {
-          "icon": "healing",
+          "icon": "female",
           "name": {
-            "tr": "Tedavi",
-            "en": "Treatment",
-            "ar": "العلاج"
+            "tr": "Mamografi",
+            "en": "Mammography",
+            "ar": "الماموغرام"
           },
           "description": {
-            "tr": "Kısa süreli tedavi planı.",
-            "en": "Short-term treatment plan.",
-            "ar": "خطة علاج قصيرة المدة."
+            "tr": "Randevulu meme görüntüleme ve uzman raporu.",
+            "en": "Appointment-based breast imaging with a specialist report.",
+            "ar": "تصوير الثدي بالموعد مع تقرير أخصائي."
           }
         },
         {
-          "icon": "first_aid",
+          "icon": "accessibility_new",
           "name": {
-            "tr": "Acil yönlendirme",
-            "en": "Emergency referral",
-            "ar": "إحالة الطوارئ"
+            "tr": "Kemik yoğunluğu",
+            "en": "Bone density",
+            "ar": "كثافة العظام"
           },
           "description": {
-            "tr": "112 ile koordinasyon (demo metin).",
-            "en": "Coordination with 112 (demo text).",
-            "ar": "تنسيق مع ١١٢ (نص تجريبي)."
+            "tr": "Kemik yoğunluğu ölçümü (DEXA); hekim istemiyle.",
+            "en": "Bone density measurement (DEXA), on a doctor's referral.",
+            "ar": "قياس كثافة العظام (DEXA) بإحالة من الطبيب."
           }
         }
       ],
@@ -1814,19 +1825,19 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "badge": {
-          "tr": "Nasıl çalışırız?",
-          "en": "How we work",
-          "ar": "كيف نعمل؟"
+          "tr": "Tetkik süreci",
+          "en": "Examination process",
+          "ar": "مسار الفحص"
         },
         "title": {
-          "tr": "Dört adımda süreç",
-          "en": "Process in four steps",
-          "ar": "العملية في أربع خطوات"
+          "tr": "Randevudan rapora",
+          "en": "From appointment to report",
+          "ar": "من الموعد إلى التقرير"
         },
         "description": {
-          "tr": "İlk görüşmeden teslimata aynı akış.",
-          "en": "The same flow, from first meeting to handover.",
-          "ar": "نفس التيار من أول لقاء إلى التسليم."
+          "tr": "Hekim istemiyle başlayan dört adım.",
+          "en": "Four steps that begin with your doctor's referral.",
+          "ar": "أربع خطوات تبدأ بإحالة من طبيبك."
         },
         "accentText": "#ffffff",
         "cardbg": "var(--mx-site-surface, #ffffff)",
@@ -1836,53 +1847,53 @@
         {
           "year": "01",
           "title": {
-            "tr": "Kayıt",
-            "en": "Registration",
-            "ar": "التسجيل"
+            "tr": "Randevu",
+            "en": "Appointment",
+            "ar": "الموعد"
           },
           "text": {
-            "tr": "Kimlik ve şikayet notu.",
-            "en": "Identity and complaint note.",
-            "ar": "ملاحظة الهوية والشكوى."
+            "tr": "Hekim isteminizle tetkik gününü seçersiniz.",
+            "en": "Choose your examination day with your doctor's referral.",
+            "ar": "تختار يوم الفحص بإحالة من طبيبك."
           }
         },
         {
           "year": "02",
           "title": {
-            "tr": "Muayene",
-            "en": "Examination",
-            "ar": "الفرز والفحص"
+            "tr": "Hazırlık",
+            "en": "Preparation",
+            "ar": "التحضير"
           },
           "text": {
-            "tr": "Fizik muayene ve triyaj.",
-            "en": "Physical examination and triage.",
-            "ar": "فحص بدني وتوجيه."
+            "tr": "Açlık, kontrast ve metal eşya bilgisi önceden iletilir.",
+            "en": "Fasting, contrast and metal-object guidance is sent in advance.",
+            "ar": "تصلك مسبقًا تعليمات الصيام والتباين والأغراض المعدنية."
           }
         },
         {
           "year": "03",
           "title": {
-            "tr": "Tetkik",
-            "en": "Test",
-            "ar": "الامتحان"
+            "tr": "Çekim",
+            "en": "Scan",
+            "ar": "التصوير"
           },
           "text": {
-            "tr": "Kan veya görüntüleme isteği.",
-            "en": "Blood or imaging request.",
-            "ar": "طلب دم أو تصوير."
+            "tr": "Teknisyen eşliğinde çekim yapılır; süre tetkike göre değişir.",
+            "en": "The scan is done with a technician; duration depends on the examination.",
+            "ar": "يتم التصوير بمرافقة فنّي، وتختلف المدة بحسب الفحص."
           }
         },
         {
           "year": "04",
           "title": {
-            "tr": "Tespit",
-            "en": "Diagnosis",
-            "ar": "التشخيص"
+            "tr": "Rapor",
+            "en": "Report",
+            "ar": "التقرير"
           },
           "text": {
-            "tr": "Sonuç görüşü ve plan.",
-            "en": "Result discussion and plan.",
-            "ar": "مناقشة النتيجة والخطة."
+            "tr": "Radyoloji uzmanı raporu hazırlar; görüntüler hekiminize iletilir.",
+            "en": "A radiology specialist prepares the report; images go to your doctor.",
+            "ar": "يعدّ أخصائي الأشعة التقرير وتُرسل الصور إلى طبيبك."
           }
         }
       ],
@@ -1911,9 +1922,9 @@
         "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
         "accent": "var(--mx-site-primary, #2563eb)",
         "badge": {
-          "tr": "Ekibimiz",
-          "en": "Our team",
-          "ar": "فريقنا"
+          "tr": "Uzman kadro",
+          "en": "Our specialists",
+          "ar": "كادرنا المتخصص"
         },
         "title": {
           "tr": "Sizi karşılayan ekip",
@@ -1932,42 +1943,42 @@
         {
           "name": "Dr. Elif K.",
           "role": {
-            "tr": "Klinisyen",
-            "en": "Clinician",
-            "ar": "طبيب"
+            "tr": "Radyoloji uzmanı",
+            "en": "Radiology specialist",
+            "ar": "أخصائية أشعة"
           },
           "bio": {
-            "tr": "9 yıl kliniği.",
-            "en": "9 years of clinic.",
-            "ar": "٩ سنوات في العيادة."
+            "tr": "9 yıl; kas-iskelet ve nöroradyoloji.",
+            "en": "9 years; musculoskeletal and neuroradiology.",
+            "ar": "9 سنوات؛ العضلات والهيكل العظمي وأشعة الأعصاب."
           },
           "img": ""
         },
         {
           "name": "Arif S.",
           "role": {
-            "tr": "Laborant",
-            "en": "Lab technician",
-            "ar": "فني المختبر"
+            "tr": "Görüntüleme teknikeri",
+            "en": "Imaging technician",
+            "ar": "فنّي تصوير"
           },
           "bio": {
-            "tr": "6 yıl numune.",
-            "en": "6 years of samples.",
-            "ar": "٦ سنوات في العينات."
+            "tr": "6 yıl MR ve BT çekimi.",
+            "en": "6 years of MRI and CT scanning.",
+            "ar": "6 سنوات في تصوير الرنين والأشعة المقطعية."
           },
           "img": ""
         },
         {
           "name": "Merve T.",
           "role": {
-            "tr": "Sekreter",
-            "en": "Medical secretary",
-            "ar": "سكرتير"
+            "tr": "Hasta kabul ve randevu",
+            "en": "Reception and appointments",
+            "ar": "الاستقبال والمواعيد"
           },
           "bio": {
-            "tr": "4 yıl randevu.",
-            "en": "4 years of appointments.",
-            "ar": "٤ سنوات في المواعيد."
+            "tr": "4 yıl hasta kabul ve randevu yönetimi.",
+            "en": "4 years in patient reception and scheduling.",
+            "ar": "4 سنوات في استقبال المرضى وإدارة المواعيد."
           },
           "img": ""
         }
@@ -1998,14 +2009,14 @@
         "accent": "var(--mx-site-primary, #2563eb)",
         "starcolor": "#f59e0b",
         "badge": {
-          "tr": "Müşteri yorumları",
-          "en": "Customer reviews",
-          "ar": "تقييمات العملاء"
+          "tr": "Hasta görüşleri",
+          "en": "Patient feedback",
+          "ar": "آراء المرضى"
         },
         "title": {
-          "tr": "Müşterilerimiz ne diyor?",
-          "en": "What our customers say",
-          "ar": "ماذا يقول عملاؤنا؟"
+          "tr": "Hastalarımız ne diyor?",
+          "en": "What our patients say",
+          "ar": "ماذا يقول مرضانا؟"
         },
         "description": {
           "tr": "Kurgusal demo yorumlar.",
@@ -2021,44 +2032,44 @@
           "role": {
             "tr": "Hasta",
             "en": "Patient",
-            "ar": "مرضى"
+            "ar": "مريضة"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Randevu dakik; açıklama net.",
-            "en": "Appointment on time; clear explanation.",
-            "ar": "موعد في الوقت؛ الشرح واضح."
+            "tr": "Çekim öncesi hazırlık net anlatıldı; rapor söylenen günde hazırdı.",
+            "en": "The preparation was explained clearly; the report was ready on the day we were told.",
+            "ar": "شُرح التحضير قبل التصوير بوضوح، وكان التقرير جاهزًا في اليوم المحدد."
           }
         },
         {
           "name": "Osman D.",
           "role": {
-            "tr": "Müşteri",
-            "en": "Customer",
-            "ar": "زبون"
+            "tr": "Hasta",
+            "en": "Patient",
+            "ar": "مريض"
           },
           "rating": 5,
           "img": "",
           "text": {
-            "tr": "Sonuç süresi bilgilendirildi.",
-            "en": "Result time was communicated.",
-            "ar": "تم إخطار وقت النتيجة."
+            "tr": "MR çekiminde beklemedik; teknisyen her adımı anlattı.",
+            "en": "We did not wait for the MRI; the technician explained every step.",
+            "ar": "لم ننتظر طويلًا في الرنين المغناطيسي، وشرح الفنّي كل خطوة."
           }
         },
         {
-          "name": "Y. Karaca.",
+          "name": "Y. Karaca",
           "role": {
             "tr": "Hasta yakını",
-            "en": "Patient’s relative",
-            "ar": "مزور المريضة"
+            "en": "Patient's relative",
+            "ar": "من أقارب المريض"
           },
           "rating": 4,
           "img": "",
           "text": {
-            "tr": "Kayanım açık; süreç şeffaf.",
-            "en": "The waiting is clear; the process is transparent.",
-            "ar": "الانتظار واضح؛ العملية شفافة."
+            "tr": "Çocuğumuzun çekiminde sakin ve ilgili davrandılar.",
+            "en": "They were calm and attentive during our child's scan.",
+            "ar": "كانوا هادئين ومهتمين أثناء تصوير طفلنا."
           }
         }
       ],
@@ -2103,17 +2114,17 @@
         "radius": "2px",
         "numara": true,
         "eyebrow": {
-          "tr": "Neyi iyi yaparız?",
-          "en": "What we do well",
-          "ar": "ما نتقنه؟"
+          "tr": "Merkezde neler var?",
+          "en": "Inside the centre",
+          "ar": "ماذا يوجد في المركز؟"
         },
         "title": {
-          "tr": "Nasıl yardımcı olabiliriz?",
-          "en": "How can we help?",
-          "ar": "كيف يمكننا المساعدة؟"
+          "tr": "Hangi tetkike ihtiyacınız var?",
+          "en": "Which examination do you need?",
+          "ar": "أي فحص تحتاج؟"
         },
         "description": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
+          "tr": "Görseller temsilidir; bu bir kurulum demosudur.",
           "en": "Images are representative; this is a setup demo.",
           "ar": "الصور تمثيلية وهذا عرض تجريبي."
         },
@@ -2126,16 +2137,16 @@
       "data": [
         {
           "baslik": {
-            "tr": "Poliklinik",
-            "en": "Polyclinic",
-            "ar": "العيادات"
+            "tr": "MR (manyetik rezonans)",
+            "en": "MRI (magnetic resonance)",
+            "ar": "الرنين المغناطيسي"
           },
           "metin": {
-            "tr": "Randevu ve triyaj akışı.",
-            "en": "Appointment and triage flow.",
-            "ar": "مسار المواعيد والتوجيه."
+            "tr": "Beyin, omurga ve eklem görüntüleme; çekim öncesi kısa bir form doldurulur.",
+            "en": "Brain, spine and joint imaging; a short form is filled in before the scan.",
+            "ar": "تصوير الدماغ والعمود الفقري والمفاصل؛ تُعبّأ استمارة قصيرة قبل التصوير."
           },
-          "img": "klinik-alet-yakin.webp",
+          "img": "klinik-hekim-eli.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2145,16 +2156,16 @@
         },
         {
           "baslik": {
-            "tr": "Laboratuvar",
-            "en": "Laboratory",
-            "ar": "المختبر"
+            "tr": "Bilgisayarlı tomografi",
+            "en": "Computed tomography (CT)",
+            "ar": "الأشعة المقطعية"
           },
           "metin": {
-            "tr": "Numune ve sonuç takibi.",
-            "en": "Sample and result tracking.",
-            "ar": "تتبع العينة والنتيجة."
+            "tr": "Kesitsel görüntüleme; gerekirse kontrastlı çekim.",
+            "en": "Cross-sectional imaging; contrast scans when needed.",
+            "ar": "تصوير مقطعي؛ مع مادة تباين عند الحاجة."
           },
-          "img": "klinik-tedavi-2.webp",
+          "img": "klinik-bekleme.webp",
           "alt": {
             "tr": "Temsilî görsel",
             "en": "Representative image",
@@ -2164,14 +2175,14 @@
         },
         {
           "baslik": {
-            "tr": "Radyoloji",
-            "en": "Radiology",
-            "ar": "الأشعة"
+            "tr": "Röntgen",
+            "en": "X-ray",
+            "ar": "الأشعة السينية"
           },
           "metin": {
-            "tr": "Görüntüleme randevusu.",
-            "en": "Imaging appointment.",
-            "ar": "موعد تصوير."
+            "tr": "Akciğer ve kemik filmi çekimleri.",
+            "en": "Chest and bone X-ray films.",
+            "ar": "صور الصدر والعظام بالأشعة السينية."
           },
           "img": "klinik-harita-bina.webp",
           "alt": {
@@ -2229,14 +2240,14 @@
         "radius": "2px",
         "showTitle": true,
         "title": {
-          "tr": "Birlikte çalıştığımız kuruluşlar",
-          "en": "Organisations we work with",
-          "ar": "جهات نعمل معها"
+          "tr": "Birlikte çalıştığımız sağlık kuruluşları",
+          "en": "Healthcare organisations we work with",
+          "ar": "جهات صحية نتعاون معها"
         },
         "description": {
-          "tr": "Kurgusal iş ortağı adları; gerçek bir kuruluşa ait değildir.",
-          "en": "Fictional partner names; they do not belong to a real organisation.",
-          "ar": "أسماء شركاء افتراضية لا تعود إلى جهة حقيقية."
+          "tr": "Kurgusal kurum adları; gerçek bir kuruluşa ait değildir.",
+          "en": "Fictional organisation names; they do not belong to a real organisation.",
+          "ar": "أسماء جهات افتراضية لا تعود إلى جهة حقيقية."
         },
         "listLabel": {
           "tr": "Referans logoları",
@@ -2246,22 +2257,22 @@
       },
       "data": [
         {
-          "name": "Demo Eczane"
-        },
-        {
-          "name": "Demo Laboratuvar"
-        },
-        {
-          "name": "Demo Ekipman"
-        },
-        {
-          "name": "Demo Dernek"
+          "name": "Demo Poliklinik"
         },
         {
           "name": "Demo Hastane"
         },
         {
-          "name": "Demo Dernek"
+          "name": "Demo Laboratuvar"
+        },
+        {
+          "name": "Demo Aile Sağlığı"
+        },
+        {
+          "name": "Demo Eczane"
+        },
+        {
+          "name": "Demo Sağlık Derneği"
         }
       ],
       "veri": {
@@ -2304,51 +2315,113 @@
       },
       "data": [
         {
+          "question": {
+            "tr": "MR çekimine nasıl hazırlanmalıyım?",
+            "en": "How should I prepare for an MRI?",
+            "ar": "كيف أستعد للرنين المغناطيسي؟"
+          },
+          "answer": {
+            "tr": "Metal eşyalarınızı çıkarırsınız. Kalp pili, implant ya da hamilelik varsa randevuda mutlaka belirtin; tetkike göre açlık gerekebilir.",
+            "en": "You remove metal objects. If you have a pacemaker, an implant or are pregnant, tell us when booking; some scans require fasting.",
+            "ar": "تخلع الأغراض المعدنية. إن كان لديك جهاز تنظيم ضربات القلب أو زرعة أو كنتِ حاملًا فأخبرنا عند الحجز؛ وقد يتطلب بعض الفحوص الصيام."
+          },
           "soru": {
-            "tr": "Tahlil sonucu ne kadar?",
-            "en": "How long for the test result?",
-            "ar": "كم تستغرق النتيجة?"
+            "tr": "MR çekimine nasıl hazırlanmalıyım?",
+            "en": "How should I prepare for an MRI?",
+            "ar": "كيف أستعد للرنين المغناطيسي؟"
           },
           "cevap": {
-            "tr": "Test tipine göre değişir; demo metni örnek vermez.",
-            "en": "It varies by test type; this demo text gives no example.",
-            "ar": "تتغير حسب نوع الفحص؛ ولا يعطي هذا النص التجريبي مثالاً."
+            "tr": "Metal eşyalarınızı çıkarırsınız. Kalp pili, implant ya da hamilelik varsa randevuda mutlaka belirtin; tetkike göre açlık gerekebilir.",
+            "en": "You remove metal objects. If you have a pacemaker, an implant or are pregnant, tell us when booking; some scans require fasting.",
+            "ar": "تخلع الأغراض المعدنية. إن كان لديك جهاز تنظيم ضربات القلب أو زرعة أو كنتِ حاملًا فأخبرنا عند الحجز؛ وقد يتطلب بعض الفحوص الصيام."
           }
         },
         {
+          "question": {
+            "tr": "Randevu için hekim istemi gerekir mi?",
+            "en": "Do I need a doctor's referral to book?",
+            "ar": "هل أحتاج إلى إحالة من الطبيب للحجز؟"
+          },
+          "answer": {
+            "tr": "Çoğu tetkik için evet; istemi randevu sırasında sizden isteriz.",
+            "en": "For most examinations, yes; we ask for the referral when you book.",
+            "ar": "في معظم الفحوص نعم، ونطلب الإحالة عند الحجز."
+          },
           "soru": {
-            "tr": "Acil durum için neredeyim?",
-            "en": "Where should I go in an emergency?",
-            "ar": "أين أذهب في الطوارئ?"
+            "tr": "Randevu için hekim istemi gerekir mi?",
+            "en": "Do I need a doctor's referral to book?",
+            "ar": "هل أحتاج إلى إحالة من الطبيب للحجز؟"
           },
           "cevap": {
-            "tr": "Önce 112; kurum yönlendirmesi demo metindir.",
-            "en": "First 112; the institution’s referral is a demo text.",
-            "ar": "١١٢ أولاً؛ إحالة المؤسسة نص تجريبي."
+            "tr": "Çoğu tetkik için evet; istemi randevu sırasında sizden isteriz.",
+            "en": "For most examinations, yes; we ask for the referral when you book.",
+            "ar": "في معظم الفحوص نعم، ونطلب الإحالة عند الحجز."
           }
         },
         {
+          "question": {
+            "tr": "Raporu ne zaman alırım?",
+            "en": "When do I get the report?",
+            "ar": "متى أستلم التقرير؟"
+          },
+          "answer": {
+            "tr": "Süre tetkike göre değişir; tahmini teslim tarihi randevuda bildirilir.",
+            "en": "It depends on the examination; the estimated date is given when you book.",
+            "ar": "تختلف المدة بحسب الفحص، ويُبلَّغ موعد التسليم المتوقع عند الحجز."
+          },
+          "soru": {
+            "tr": "Raporu ne zaman alırım?",
+            "en": "When do I get the report?",
+            "ar": "متى أستلم التقرير؟"
+          },
+          "cevap": {
+            "tr": "Süre tetkike göre değişir; tahmini teslim tarihi randevuda bildirilir.",
+            "en": "It depends on the examination; the estimated date is given when you book.",
+            "ar": "تختلف المدة بحسب الفحص، ويُبلَّغ موعد التسليم المتوقع عند الحجز."
+          }
+        },
+        {
+          "question": {
+            "tr": "Sitedeki görseller ve veriler gerçek midir?",
+            "en": "Are the images and data on the site real?",
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
+          },
+          "answer": {
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
+            "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
+          },
           "soru": {
             "tr": "Sitedeki görseller ve veriler gerçek midir?",
             "en": "Are the images and data on the site real?",
-            "ar": "هل الصور والبيانات في الموقع حقيقية?"
+            "ar": "هل الصور والبيانات في الموقع حقيقية؟"
           },
           "cevap": {
-            "tr": "Hayır; bu bir kuruluma örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
+            "tr": "Hayır; bu bir kurulum örneğidir. Görseller temsilî, adlar, rakamlar ve kişiler kurgusaldır.",
             "en": "No; this is a setup example. Images are representative and names, figures and people are fictional.",
             "ar": "لا؛ هذا مثال تركيب. الصور تمثيلية والأسماء والأرقام والشخصيات افتراضية."
           }
         },
         {
+          "question": {
+            "tr": "Fiyatlar nasıl belirlenir?",
+            "en": "How are prices determined?",
+            "ar": "كيف تُحدَّد الأسعار؟"
+          },
+          "answer": {
+            "tr": "Tetkik türüne ve sigorta kapsamına göre belirlenir; bu demo metninde fiyat yer almaz.",
+            "en": "They depend on the examination and insurance coverage; this demo text lists no prices.",
+            "ar": "تعتمد على نوع الفحص والتغطية التأمينية؛ ولا يتضمن هذا النص التجريبي أسعارًا."
+          },
           "soru": {
             "tr": "Fiyatlar nasıl belirlenir?",
             "en": "How are prices determined?",
-            "ar": "كيف تُحدَّد الأسعار?"
+            "ar": "كيف تُحدَّد الأسعار؟"
           },
           "cevap": {
-            "tr": "İhtiyacınıza göre teklifle belirlenir; genel bir fiyat aralığı demo metninde yer almaz.",
-            "en": "A quote based on your needs sets the price; a general range is not shown in this demo text.",
-            "ar": "يُحدَّد السعر عبر عرض سعر حسب احتياجاتك؛ ولا يُذكر نطاق عام في هذا النص التجريبي."
+            "tr": "Tetkik türüne ve sigorta kapsamına göre belirlenir; bu demo metninde fiyat yer almaz.",
+            "en": "They depend on the examination and insurance coverage; this demo text lists no prices.",
+            "ar": "تعتمد على نوع الفحص والتغطية التأمينية؛ ولا يتضمن هذا النص التجريبي أسعارًا."
           }
         }
       ],
@@ -2406,9 +2479,9 @@
         "errcolor": "var(--mx-color-danger, #b42318)",
         "radius": "2px",
         "title": {
-          "tr": "Teklif isteyin",
-          "en": "Request a quote",
-          "ar": "اطلب عرض سعر"
+          "tr": "Randevu isteyin",
+          "en": "Request an appointment",
+          "ar": "اطلب موعدًا"
         },
         "description": {
           "tr": "Bilgilerinizi bırakın; en geç iki iş günü içinde dönüş yaparız. Bu form demodur; e-posta istemciniz açılır, veri saklanmaz.",
@@ -2421,22 +2494,22 @@
           "ar": "Net Görüntü"
         },
         "panelText": {
-          "tr": "Görseller temsilidir; bu bir kurulum demosıdır.",
+          "tr": "Görseller temsilidir; bu bir kurulum demosudur.",
           "en": "Images are representative; this is a setup demo.",
           "ar": "الصور تمثيلية وهذا عرض تجريبي."
         },
         "address": {
           "tr": "Dokuma Sokak No: 14, Şahinbey, Gaziantep (kurgusal adres)",
-          "en": "14 Imaging Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع تصوير رقم 14، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "en": "14 Dokuma Street, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع دوكوما رقم 14، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "phone": "+90 342 025 01 02",
         "whatsapp": "903420250102",
         "email": "talep@netoruntu.example",
         "hours": {
           "tr": "Pzt–Cum 08:00 – 18:00",
-          "en": "Mon–Wed 08:00 – 18:00",
-          "ar": "الاثنين–الأربعاء 08:00 – 18:00"
+          "en": "Mon–Fri 08:00 – 18:00",
+          "ar": "الاثنين–الجمعة 08:00 – 18:00"
         },
         "mapUrl": "",
         "mapEmbed": "",
@@ -2477,9 +2550,9 @@
         },
         "social": [],
         "formTitle": {
-          "tr": "Teklif formu",
-          "en": "Quote form",
-          "ar": "نموذج الطلب"
+          "tr": "Randevu formu",
+          "en": "Appointment form",
+          "ar": "نموذج الموعد"
         },
         "nameLabel": {
           "tr": "Ad Soyad",
@@ -2510,25 +2583,25 @@
           {
             "id": "a",
             "name": {
-              "tr": "Yeni talep",
-              "en": "New request",
-              "ar": "طلب جديد"
+              "tr": "MR / Tomografi",
+              "en": "MRI / CT",
+              "ar": "رنين / أشعة مقطعية"
             }
           },
           {
             "id": "b",
             "name": {
-              "tr": "Ölçü ve keşif",
-              "en": "Measure and survey",
-              "ar": "قياس واستقصاء"
+              "tr": "Röntgen / Ultrason",
+              "en": "X-ray / Ultrasound",
+              "ar": "أشعة سينية / سونار"
             }
           },
           {
             "id": "c",
             "name": {
-              "tr": "Teknik soru",
-              "en": "Technical question",
-              "ar": "سؤال فني"
+              "tr": "Mamografi / Kemik yoğunluğu",
+              "en": "Mammography / Bone density",
+              "ar": "ماموغرام / كثافة العظام"
             }
           },
           {
@@ -2615,7 +2688,8 @@
           "tr": "Merhaba, web sitenizden yazıyorum.",
           "en": "Hello, I am writing from your website.",
           "ar": "مرحبًا، أكتب إليكم من موقعكم الإلكتروني."
-        }
+        },
+        "formAction": ""
       },
       "data": [],
       "veri": {
@@ -2639,33 +2713,33 @@
           "ar": "Net Görüntü"
         },
         "description": {
-          "tr": "Net Görüntü, görüntüleme ve rapor sunar. Görseller temsilidir; metinler kurgusaldır.",
-          "en": "Net imaj offers imaging and reports. Images are representative and text is fictional.",
-          "ar": "يقدم نتي مياج تصوير وتقرير. الصور تمثيلية والنصوص افتراضية."
+          "tr": "Net Görüntü; MR, tomografi, röntgen, ultrason ve mamografi sunan kurgusal bir görüntüleme merkezidir. Görseller temsilîdir; metinler kurgusaldır.",
+          "en": "Net Görüntü is a fictional imaging centre offering MRI, CT, X-ray, ultrasound and mammography. Images are representative and text is fictional.",
+          "ar": "Net Görüntü مركز تصوير افتراضي يقدّم الرنين المغناطيسي والأشعة المقطعية والسينية والسونار والماموغرام. الصور تمثيلية والنصوص افتراضية."
         },
         "name2": {
-          "tr": "Tek kat",
-          "en": "One floor",
-          "ar": "طابق واحد"
+          "tr": "Tek katta tetkik",
+          "en": "Everything on one floor",
+          "ar": "كل شيء في طابق واحد"
         },
         "spot2": {
-          "tr": "Kayıttan çıkanma aynı binada.",
-          "en": "From registration through departure in the same building.",
-          "ar": "من التسجيل إلى الخروج في نفس المبنى."
+          "tr": "Kayıt, çekim ve rapor teslimi aynı binada.",
+          "en": "Registration, scanning and report pick-up in one building.",
+          "ar": "التسجيل والتصوير واستلام التقرير في مبنى واحد."
         },
-        "icon2": "verified",
+        "icon2": "meeting_room",
         "name3": {
-          "tr": "Kayıt defteri",
-          "en": "Record book",
-          "ar": "دفتر السجلات"
+          "tr": "Hasta gizliliği",
+          "en": "Patient privacy",
+          "ar": "خصوصية المريض"
         },
         "spot3": {
-          "tr": "Her süreç kayıt altında; hasta onayıyla.",
-          "en": "Every process is under record; with patient consent.",
-          "ar": "كل العملية تحت السجل؛ بموافقة المريض."
+          "tr": "Görüntüleriniz yalnızca sizin onayınızla paylaşılır.",
+          "en": "Your images are shared only with your consent.",
+          "ar": "لا تُشارَك صورك إلا بموافقتك."
         },
-        "icon3": "schedule",
-        "img": "klinik-klinik-oda.webp",
+        "icon3": "lock",
+        "img": "klinik-hero-resepsiyon.webp",
         "bgcolor": "var(--mx-site-surface-2, #ececea)",
         "fontcolor": "var(--mx-site-text, #1b1b1b)",
         "margintop": "20",
@@ -2730,16 +2804,16 @@
         },
         "description": {
           "tr": "Pzt–Cum 08:00 – 18:00",
-          "en": "Mon–Wed 08:00 – 18:00",
-          "ar": "الاثنين–الأربعاء 08:00 – 18:00"
+          "en": "Mon–Fri 08:00 – 18:00",
+          "ar": "الاثنين–الجمعة 08:00 – 18:00"
         },
         "phone": "+90 342 025 01 02",
         "whatsapp": "903420250102",
         "email": "talep@netoruntu.example",
         "address": {
           "tr": "Dokuma Sokak No: 14, Şahinbey, Gaziantep (kurgusal adres)",
-          "en": "14 Imaging Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع تصوير رقم 14، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "en": "14 Dokuma Street, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع دوكوما رقم 14، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "mapsUrl": "",
         "waMessage": {
@@ -2753,9 +2827,9 @@
           "ar": "اتصل بنا"
         },
         "callText": {
-          "tr": "Hafta içi 09:00 – 18:00",
-          "en": "Weekdays 09:00 – 18:00",
-          "ar": "أيام الأسبوع 09:00 – 18:00"
+          "tr": "Pzt–Cum 08:00 – 18:00",
+          "en": "Mon–Fri 08:00 – 18:00",
+          "ar": "الاثنين–الجمعة 08:00 – 18:00"
         },
         "callBtn": {
           "tr": "Ara",
@@ -2847,9 +2921,9 @@
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
         "radius": "2px",
         "title": {
-          "tr": "Tarama öncesi",
-          "en": "Before the scan",
-          "ar": "قبل المسح"
+          "tr": "Tetkik randevusu alın",
+          "en": "Book your examination",
+          "ar": "احجز موعد فحصك"
         },
         "text": {
           "tr": "İki iş günü içinde dönüş yaparız. Bu demo sitede veri saklanmaz.",
@@ -2857,15 +2931,15 @@
           "ar": "نردّ خلال يومي عمل. لا تُحفظ أي بيانات في هذا الموقع التجريبي."
         },
         "btn1Label": {
-          "tr": "Formu doldurun",
-          "en": "Fill the form",
-          "ar": "املأ النموذج"
+          "tr": "Randevu formu",
+          "en": "Appointment form",
+          "ar": "نموذج الموعد"
         },
         "btn1Url": "teklif-al",
         "btn2Label": {
-          "tr": "Hizmetleri gör",
-          "en": "See services",
-          "ar": "شاهد الخدمات"
+          "tr": "Tetkikleri gör",
+          "en": "See examinations",
+          "ar": "شاهد الفحوصات"
         },
         "btn2Url": "hizmetler",
         "number": "903420250102",
@@ -2882,8 +2956,8 @@
         },
         "hours": {
           "tr": "Pzt–Cum 08:00 – 18:00",
-          "en": "Mon–Wed 08:00 – 18:00",
-          "ar": "الاثنين–الأربعاء 08:00 – 18:00"
+          "en": "Mon–Fri 08:00 – 18:00",
+          "ar": "الاثنين–الجمعة 08:00 – 18:00"
         },
         "hoursLabel": {
           "tr": "Çalışma saatleri",
@@ -2891,9 +2965,9 @@
           "ar": "ساعات العمل"
         },
         "waMessage": {
-          "tr": "Merhaba, Net Görüntü ile iletişime geçmek istiyorum.",
-          "en": "Hello, I would like to get in touch with Net Görüntü.",
-          "ar": "مرحبًا، أودّ التواصل مع Net Görüntü."
+          "tr": "Merhaba, Net Görüntü'den görüntüleme randevusu almak istiyorum.",
+          "en": "Hello, I would like to book an imaging appointment at Net Görüntü.",
+          "ar": "مرحبًا، أودّ حجز موعد تصوير في Net Görüntü."
         },
         "img": "",
         "alt": {
@@ -3055,8 +3129,8 @@
         "hours": [],
         "address": {
           "tr": "Dokuma Sokak No: 14, Şahinbey, Gaziantep (kurgusal adres)",
-          "en": "14 Imaging Street, Sahinbey, Gaziantep (fictional address)",
-          "ar": "شارع تصوير رقم 14، شين بيه، غازي عنتاب (عنوان افتراضي)"
+          "en": "14 Dokuma Street, Sahinbey, Gaziantep (fictional address)",
+          "ar": "شارع دوكوما رقم 14، شاهين بي، غازي عنتاب (عنوان افتراضي)"
         },
         "phone": "+90 342 025 01 02",
         "email": "talep@netoruntu.example",
