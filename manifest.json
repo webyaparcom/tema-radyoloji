@@ -1,7 +1,7 @@
 {
   "name": "Net Görüntü",
   "short_name": "Net Görüntü",
-  "description": "Görüntüleme ve rapor; görseller temsilîdir.",
+  "description": "Net Görüntü: MR, tomografi, röntgen, ultrason ve mamografi için randevulu görüntüleme merkezi; görseller temsilîdir.",
   "start_url": "/tr/",
   "scope": "/",
   "display": "standalone",

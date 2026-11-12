@@ -2,14 +2,14 @@
   "order": false,
   "user": false,
   "description": {
-    "tr": "Görüntüleme ve rapor; görseller temsilîdir.",
-    "en": "Imaging and reports; images are representative.",
-    "ar": "تصوير وتقرير؛ الصور تمثيلية."
+    "tr": "Net Görüntü: MR, tomografi, röntgen, ultrason ve mamografi için randevulu görüntüleme merkezi; görseller temsilîdir.",
+    "en": "Net Görüntü: an appointment-based imaging centre for MRI, CT, X-ray, ultrasound and mammography; images are representative.",
+    "ar": "Net Görüntü: مركز تصوير بالموعد للرنين المغناطيسي والأشعة المقطعية والسينية والموجات فوق الصوتية والماموغرام؛ الصور تمثيلية."
   },
   "keyword": {
-    "tr": "radyoloji, görüntüleme, cihaz",
-    "en": "radiology, imaging, device",
-    "ar": "رنين، تصوير، جهاز"
+    "tr": "radyoloji, MR, tomografi, röntgen, ultrason, mamografi",
+    "en": "radiology, MRI, CT, X-ray, ultrasound, mammography",
+    "ar": "أشعة، رنين مغناطيسي، أشعة مقطعية، سونار، ماموغرام"
   },
   "category": "Kurumsal",
   "name": "Net Görüntü",
