@@ -7,11 +7,11 @@
 <title>404 — Net Görüntü</title>
 </head>
 <body>
-<link rel="stylesheet" href="/src/rubik.css?v=o4vgd" />
+<link rel="stylesheet" href="/src/rubik.css?v=ruyu5" />
 <nav>
   <div href="/" class="menu">
     <a href="/" class="website_name"
-      ><img src="/img/logo.png?v=o4vgd" width="300" alt="Net Görüntü Logo"
+      ><img src="/img/logo.png?v=ruyu5" width="300" alt="Net Görüntü Logo"
     /></a>
   </div>
 </nav>
@@ -828,7 +828,7 @@
 <script>
   setTimeout(function() {
     var currentPath = window.location.pathname;
-    var rtlLanguages = ['ar', 'he', 'fa']; // RTL diller: Arapça, İbranice, Farsça
+    var rtlLanguages = ['ar', 'fa', 'he', 'ur']; // RTL diller (services/webmaker/langKatalog.js yon:rtl aynası): Arapça, Farsça, İbranice, Urduca
     var langMatch = currentPath.match(/^\/([a-z]{2})\//);
     var currentLang = langMatch ? langMatch[1] : '';
     if (rtlLanguages.indexOf(currentLang) !== -1) {
