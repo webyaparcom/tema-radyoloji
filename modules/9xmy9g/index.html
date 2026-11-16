@@ -1,149 +1,67 @@
-<section class="modulex-tline">
-  <div class="modulex-tline-container">
-    <div class="modulex-tline-header">
-      <div class="modulex-tline-badge">{{badge}}</div>
-      <h2 class="modulex-tline-title">{{title}}</h2>
-      <p class="modulex-tline-desc">{{description}}</p>
-    </div>
-    <div class="modulex-tline-list">
-      {{html}}
-    </div>
+<section class="modulex-zaman-ikon-zincir{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-zaman-ikon-zincir-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
 </section>
 
 <style>
-  .modulex-tline {
-    width: 100%;
-    padding: 80px 20px;
-    background: --bgcolor--;
-    box-sizing: border-box;
-  }
+  /* zaman-ikon-zincir — İkonografi baskın kronoloji: olaylar simgelerle tanınır (kuruluş, fabrika, ödül…), çizgi zincir bağıdır. */
+  .modulex-zaman-ikon-zincir { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-zaman-ikon-zincir *, .modulex-zaman-ikon-zincir *::before, .modulex-zaman-ikon-zincir *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-zaman-ikon-zincir :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-zaman-ikon-zincir :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-zaman-ikon-zincir :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-zaman-ikon-zincir :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-zaman-ikon-zincir img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-zaman-ikon-zincir) img { height: auto; }
+  .modulex-zaman-ikon-zincir [hidden] { display: none !important; }
+  .modulex-zaman-ikon-zincir :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-zaman-ikon-zincir :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-zaman-ikon-zincir-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-zaman-ikon-zincir-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-zaman-ikon-zincir--bassiz .modulex-zaman-ikon-zincir-bas { display: none; }
+  .modulex-zaman-ikon-zincir-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-zaman-ikon-zincir-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-zaman-ikon-zincir-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-zaman-ikon-zincir-bas { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px 48px; align-items: end; }
+  .modulex-zaman-ikon-zincir-ust { grid-column: 1 / -1; }
+  .modulex-zaman-ikon-zincir-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-zaman-ikon-zincir-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-zaman-ikon-zincir-dugme:hover { transform: translateY(-2px); }
+  .modulex-zaman-ikon-zincir-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-zaman-ikon-zincir-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-zaman-ikon-zincir-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-tline-container {
-    max-width: --max--;
-    margin: 0 auto;
-  }
-
-  .modulex-tline-header {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .modulex-tline-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .modulex-tline-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-tline-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-tline-list {
-    position: relative;
-    max-width: 760px;
-    margin: 0 auto;
-    padding-left: 34px;
-  }
-
-  .modulex-tline-list::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 6px;
-    bottom: 6px;
-    width: 2px;
-    background: --linecolor--;
-  }
-
-  .modulex-tline-item {
-    position: relative;
-    padding: 0 0 32px 18px;
-    animation: tlineIn 0.5s ease both;
-  }
-
-  .modulex-tline-item:last-child {
-    padding-bottom: 0;
-  }
-
-  @keyframes tlineIn {
-    from { opacity: 0; transform: translateX(-14px); }
-    to { opacity: 1; transform: translateX(0); }
-  }
-
-  .modulex-tline-dot {
-    position: absolute;
-    left: -32px;
-    top: 4px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: --accent--;
-    border: 3px solid --bgcolor--;
-    box-shadow: 0 0 0 2px --accent--;
-  }
-
-  .modulex-tline-year {
-    display: inline-block;
-    padding: 3px 12px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 8px;
-  }
-
-  .modulex-tline-item-title {
-    font-size: 18px;
-    font-weight: 700;
-    color: --titlecolor--;
-    margin: 0 0 6px;
-  }
-
-  .modulex-tline-item-text {
-    font-size: 14px;
-    line-height: 1.7;
-    color: --textcolor--;
-    margin: 0;
-  }
-
+  .modulex-zaman-ikon-zincir-zincir { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); gap: 36px 28px; }
+  .modulex-zaman-ikon-zincir-halka { position: relative; display: grid; align-content: start; gap: 8px; }
+  .modulex-zaman-ikon-zincir-halka + .modulex-zaman-ikon-zincir-halka::before { content: ""; position: absolute; inset-block-start: 36px; inset-inline-end: calc(100% - 0px); width: 28px; border-block-start: 3px dashed --accent--; }
+  .modulex-zaman-ikon-zincir-kare { display: inline-grid; place-items: center; width: 72px; height: 72px; margin-block-end: 6px; border-radius: 20px; background: --kartBg--; border: 2px solid --cizgi--; color: --accentInk--; transform: rotate(-4deg); transition: transform 0.35s ease, background 0.35s ease, color 0.35s ease; }
+  .modulex-zaman-ikon-zincir-halka:nth-child(even) .modulex-zaman-ikon-zincir-kare { transform: rotate(4deg); }
+  .modulex-zaman-ikon-zincir-halka:hover .modulex-zaman-ikon-zincir-kare { transform: rotate(0) scale(1.08); background: --accent--; color: --accentText--; }
+  .modulex-zaman-ikon-zincir-kare .material-symbols-outlined { font-size: 36px; }
+  .modulex-zaman-ikon-zincir-yil { color: --accentInk--; font-size: 0.9rem; font-weight: 800; letter-spacing: 0.06em; }
+  .modulex-zaman-ikon-zincir-kbaslik { font-size: 1.1rem; font-weight: 700; }
+  .modulex-zaman-ikon-zincir-kmetin { color: --muted--; font-size: 0.93rem; }
   @media (max-width: 768px) {
-    .modulex-tline {
-      padding: 48px 14px;
-    }
-
-    .modulex-tline-title {
-      font-size: 26px;
-    }
-
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-zaman-ikon-zincir-halka + .modulex-zaman-ikon-zincir-halka::before { display: none; }
   }
+  .modulex-zaman-ikon-zincir-bag { color: inherit; text-decoration: none; }
+  .modulex-zaman-ikon-zincir-bag::after { content: ""; position: absolute; inset: 0; z-index: 3; }
+  .modulex-zaman-ikon-zincir-bag:hover { text-decoration: underline; text-underline-offset: 4px; }
 
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-zaman-ikon-zincir :is(.modulex-zaman-ikon-zincir-baslik, .modulex-zaman-ikon-zincir-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-zaman-ikon-zincir-baslik { line-height: 1.35; }
+  @media (max-width: 1024px) {
+    .modulex-zaman-ikon-zincir-bas { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .modulex-zaman-ikon-zincir { padding-inline: 16px; }
+  }
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-zaman-ikon-zincir *, .modulex-zaman-ikon-zincir *::before, .modulex-zaman-ikon-zincir *::after { animation: none !important; transition: none !important; }
   }
 </style>
